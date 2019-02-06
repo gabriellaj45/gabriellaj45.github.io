@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Phone Demo</title>
+        <link rel="stylesheet" href="phone.css">
+    </head>
+    <body>
+        <div class="tabBar" id="tabBar">
+            <button class="tabButton" id="dialerButton">Dialer</button>
+            <button class="tabButton" id="listButton">Contact List</button>
+            <button class="tabButton" id="contactButton">Add Contact</button>            
+        </div>
+        <div class="tabContent" id="tabContent">
+            <div class="dialerTab" id="dialerTab">
+                <div class="headingText" id="headingText"> Dialer</div>
+                <form>
+                    <input class="textField" id="name" placeholder="" size="45">
+                </form> 
+                <br>
+                <button class="dialerButton" id="dialerButton">1</button>
+                <button class="dialerButton" id="dialerButton">2</button>
+                <button class="dialerButton" id="dialerButton">3</button>
+                <br>
+                <button class="dialerButton" id="dialerButton">4</button>
+                <button class="dialerButton" id="dialerButton">5</button>
+                <button class="dialerButton" id="dialerButton">6</button>
+                <br>
+                <button class="dialerButton" id="dialerButton">7</button>
+                <button class="dialerButton" id="dialerButton">8</button>
+                <button class="dialerButton" id="dialerButton">9</button>
+                <br>
+                <button class="dialerButton" id="dialerButton">*</button>
+                <button class="dialerButton" id="dialerButton">0</button>
+                <button class="dialerButton" id="dialerButton">#</button>
+                <br>
+                <button class="dialerEndButton" id="dialerButton">Dial</button>
+                <button class="dialerEndButton" id="dialerButton">Clear</button>
+
+            </div>
+            <div class="listTab" id="listTab">
+                <div class="headingText" id="headingText"> Contact List</div>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Iron Man</button></div>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Captain America</button></div>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Black Widow</button></div>
+                    <br>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Thor</button></div>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Black Panther</button></div>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Doctor Strange</button></div>
+                    <br>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Ant Man</button></div>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Scarlet Witch</button></div>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Vision</button></div>
+                    <br>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Bucky Barnes</button></div>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Groot</button></div>
+                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Spiderman</button></div>
+            </div>
+            <div class="contactTab" id="contactTab">
+                <div class="headingText" id="headingText"> Add Contact </div>
+                <form>
+                    <label for="name">Name</label>
+                    <br>
+                    <input class="textField" id="name" placeholder="Jane Smith">
+                </form>
+                <form>
+                    <label for="phoneNumber">Phone Number</label>
+                    <br>
+                    <input class="textField" id="phoneNumber" placeholder="123-456-7890">
+                </form>
+                <form>
+                    <label for="emailAddr">Email Address</label>
+                    <br>
+                    <input class="textField" id="emailAddr" placeholder="jane.smith@colorado.edu">
+                </form>
+                <button class="addContactbutton" id="addContactButton">Add Contact</button>
+                <button class="addContactbutton" id="clearButton">Clear</button>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="phone.js"></script>
+    </body>
+</html>
