@@ -24,6 +24,7 @@ button {
     font-weight: bold;
     font-size: 30px;
     padding-bottom: 20px;
+
 }
 
 .dialerButton:hover {
@@ -84,7 +85,10 @@ button {
     width: 100%;
     clear: both;
 }
-
+.images {
+    width: 128; 
+    height: 128;
+}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;

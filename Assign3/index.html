@@ -54,30 +54,65 @@
                       <th>First Appearance</th>
                     </tr>
                     <tr>
-                      <td><div class="buttonLine"><button class="contactListButton" id="contactListButton">Iron Man</button></div></td>
-                      <td>210-435-4950</td>
-                      <td>2008</td>
+                        <td>
+                            <div class="buttonLine">
+                                <button class="contactListButton" id="contactListButton">Iron Man</button>
+                                <img class="images" src="IronMan.jpeg" alt="This is a picutre of Iron Man from Marvel">
+                            </div>
+                        </td>
+                        <td>210-435-4950</td>
+                        <td>2008</td>
                     </tr>
                     <tr>
-                      <td><div class="buttonLine"><button class="contactListButton" id="contactListButton">Captain America</button></div></td>
+                        <td>
+                            <div class="buttonLine">
+                                <button class="contactListButton" id="contactListButton">Captain America</button>
+                                <img class="images" src="Captain America.jpeg" alt="This is a picutre of Captain America from Marvel">
+                            </div>
+                        </td>
                       <td>210-446-5061</td>
                       <td>2011</td>
                     </tr>
                     <tr>
-                        <td><div class="buttonLine"><button class="contactListButton" id="contactListButton">Black Widow</button></div></td>
+                        <td>
+                            <div class="buttonLine">
+                                <button class="contactListButton" id="contactListButton">Black Widow</button>
+                                <img class="images" src="Black Widow.jpeg" alt="This is a picutre of Black Widow from Marvel">
+                            </div>
+                        </td>
                         <td>210-457-6172</td>
                         <td>2010</td> 
                     </tr>
                     <tr>
-                        <td><div class="buttonLine"><button class="contactListButton" id="contactListButton">Thor</button></div></td>
+                        <td>
+                            <div class="buttonLine">
+                                <button class="contactListButton" id="contactListButton">Thor</button>
+                                <img class="images" src="Thor.jpeg" alt="This is a picutre of Thor from Marvel">
+                            </div>
+                        </td>
                         <td>210-468-7183</td>
                         <td>2011</td> 
                     </tr>
                     <tr>
-                        <td><div class="buttonLine"><button class="contactListButton" id="contactListButton">Black Panther</button></div></td>
+                        <td>
+                            <div class="buttonLine">
+                                <button class="contactListButton" id="contactListButton">Black Panther</button>
+                                <img class="images" src="Black Panther.jpeg" alt="This is a picutre of Black Panther from Marvel">
+                            </div>
+                        </td>
                         <td>210-479-8294</td>
                         <td>2014</td> 
                     </tr>
+                    <tr>
+                            <td>
+                                <div class="buttonLine">
+                                    <button class="contactListButton" id="contactListButton">Groot</button>
+                                    <img class="images" src="Groot.jpeg" alt="This is a picutre of Groot from Marvel">
+                                </div>
+                            </td>
+                            <td>210-435-4850</td>
+                            <td>2014</td> 
+                        </tr>
                     <tr>
                         <td><div class="buttonLine"><button class="contactListButton" id="contactListButton">Doctor Strange</button></div></td>
                         <td>210-480-9305</td>
@@ -103,11 +138,7 @@
                         <td>210-424-3749</td>
                         <td>2011</td> 
                     </tr>
-                    <tr>
-                        <td><div class="buttonLine"><button class="contactListButton" id="contactListButton">Groot</button></div></td>
-                        <td>210-435-4850</td>
-                        <td>2014</td> 
-                    </tr>
+                    
                     <tr>
                         <td><div class="buttonLine"><button class="contactListButton" id="contactListButton">Spiderman</button></div></td>
                         <td>210-446-5961</td>
@@ -135,7 +166,143 @@
             </div>
 
             <div class="helpTab" id="helpTab">
-                    help info
+                <div class="headingText" id="headingText" role="banner"> Help</div>
+                This tab provides a table of all the keyboard shortcuts that this app contains
+                and all the accessibility features of the app.
+                <div class="information" role="main">
+                    <ul>
+                        <li>Tab Control</li>
+                            <ul>
+                                <li>Every button in the app is accessible via the tab key </li>
+                            </ul>
+                        <li>Keyboard Shortcuts</li>
+                            <ul>
+                                <li>
+                                    Below is the list of keyboard shortcuts that will allow you to 
+                                    navigate through the app quickly and selects key on the dialer.
+                                </li>
+                            </ul>
+                        <li>Contact List Table</li>
+                            <ul>
+                                <li>
+                                    The contact list table was changed from a list of buttons to a table 
+                                    so that the screen reader can have an easier time traversing the information.
+                                </li>
+                            </ul>
+                        <li>Captioned Images</li>
+                            <ul>
+                                <li>
+                                    All images in this app have alt text meaning that there is a description
+                                    attached to all images explaining what the images is about and the objects 
+                                    contained in it. This allows a screen reader to provide its user with information 
+                                    about the picture.
+                                </li>
+                            </ul>
+                        <li>ARIA Landmark Roles</li>
+                            <ul>
+                                <li>
+                                    The ARIA Landmark Roles provides the screen with directions of 
+                                    how to navigate through the app.
+                                </li>
+                            </ul>
+                        <li>ARIA Live Regions</li>
+                            <ul>
+                                <li>The ARIA Live Regions alerts a screen reader user to any content changes.</li>
+                            </ul>
+                    </ul>
+                </div>
+                <h3>Table of Keyboard Shortcuts</h3>
+                <table>
+                    <tr>
+                        <th>Keyboard Shortcut</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + D</td>
+                        <td>Navigates to Dialer Tab</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + C</td>
+                        <td>Navigates to Contact List Tab</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + A</td>
+                        <td>Navigates to Add Contact Tab</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + H</td>
+                        <td>Navigates to Help Tab</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + 1</td>
+                        <td>Selects the 1 key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + 2</td>
+                        <td>Selects the 2 key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + 3</td>
+                        <td>Selects the 3 key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + 4</td>
+                        <td>Selects the 4 key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + 5</td>
+                        <td>Selects the 5 key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + 6</td>
+                        <td>Selects the 6 key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + 7</td>
+                        <td>Selects the 7 key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + 8</td>
+                        <td>Selects the 8 key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + 9</td>
+                        <td>Selects the 9 key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + 0</td>
+                        <td>Selects the 0 key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + P</td>
+                        <td>Selects the pound key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + X</td>
+                        <td>Selects the star key in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + L</td>
+                        <td>Selects the dial button in the dialer</td>
+                    </tr>
+                    <tr>
+                        <td>Contorl + Option + R</td>
+                        <td>Selects the clear button in the dialer</td>
+                    </tr>
+                </table>
+                <h3>Image Citation</h3>
+                <ul>
+                    <li>Iron Man. Digital Image. PngImg.com. <a href="http://pngimg.com/download/29632">http://pngimg.com/download/29632</a></li>
+                    <li>Captain America. Digital Image. PngImg.com. <a href="http://pngimg.com/download/29971">http://pngimg.com/download/29971</a></li>
+                    <li>Black Widow. Digital Image. Flickr. <a href="https://www.flickr.com/photos/tales2astonish/7122170865">https://www.flickr.com/photos/tales2astonish/7122170865</a></li>
+                    <li>Thor. Digital Image. Deviant Art. <a href="https://www.deviantart.com/vampiregodesnyx/art/Avengers-Seven-Minutes-in-Heaven-Thor-708521268">https://www.deviantart.com/vampiregodesnyx/art/Avengers-Seven-Minutes-in-Heaven-Thor-708521268</a></li>
+                    <li>Black Panther. Digital Image. Flickr. <a href="https://www.flickr.com/photos/flyguy/23580864832">https://www.flickr.com/photos/flyguy/23580864832</a></li>
+                    <li>Groot. Digital Image. Flickr. <a href="https://www.flickr.com/photos/53554756@N02/31774445420">https://www.flickr.com/photos/53554756@N02/31774445420</a></li>
+                    
+
+                    
+                </ul>
+
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
