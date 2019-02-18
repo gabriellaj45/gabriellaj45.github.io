@@ -1,0 +1,103 @@
+/* make all buttons 20 by 20 pixels with white text and green background and a 10 pixel margin */
+button { 
+    width: 100px; 
+    height: 100px; 
+    color: black; 
+    margin: 5px; 
+    background: lightgray;  
+ }
+
+* {
+    font-size: 20px;
+    font-family: "Arial", Arial, sans-serif;
+}
+.tabButton {
+    width: 25%;
+    height: 25%;
+}
+::-webkit-input-placeholder {
+    font-size: 18px;
+}
+
+.headingText {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+
+}
+
+.dialerButton:hover {
+    color: mediumaquamarine;   
+}
+.tabButton:hover {
+    color: blue;   
+    background: white;
+}
+.dialerControlButton {  
+    width: 157px;
+    height: 100px;
+}
+.dialerControlButton:hover {
+    color: greenyellow;   
+}
+.dialerButton {
+    font-size: 20;
+}
+.tabBar {
+    background: white;
+    padding: 5px;
+    text-align: center;
+}
+.textField {
+    border-radius: 5px;
+}
+.tabButton {
+    width: 200px;
+    height: 25px; 
+    border-radius: 20px;
+}
+
+.buttonLine {
+    display: inline-block;
+}
+.contactListButton {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+
+}
+
+.addContactbutton {
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+}
+
+.container {
+    width: 250px;;
+    clear: both;
+}
+  
+.container input {
+    width: 100%;
+    clear: both;
+}
+.images {
+    width: 128; 
+    height: 128;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
