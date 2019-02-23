@@ -2,7 +2,7 @@
     body {
       background-color: black;
     }
-  }
+}
 body {
     font-size: 64px;
     background-color: black;
@@ -53,4 +53,8 @@ button {
     grid-row: 2;
     grid-column-start: 1;
     grid-column-end: span 3;
+}
+
+.headingText {
+    color: white;
 }
