@@ -88,6 +88,62 @@ function subtraction(event, num1) {
 	  }
 	})
   }
+  function power(event, num1) {
+	$(".calculatorButton").click(function(event) {
+	  var thingClicked = this.innerHTML
+	  if ($(this).hasClass("number")) {
+		var nextNum = parseInt(thingClicked)
+		$("#currentValue").html(nextNum) 
+		var result = Math.pow(num1, nextNum)
+		storeAnswer(result) 
+		return result
+	  } else {
+		return thingClicked
+	  }
+	})
+  }
+  function squareRoot(event) {
+	$(".calculatorButton").click(function(event) {
+	  var thingClicked = this.innerHTML
+	  if ($(this).hasClass("number")) {
+		var num = parseInt(thingClicked)
+		$("#currentValue").html(num) 
+		var result = Math.sqrt(num)
+		storeAnswer(result) 
+		return result
+	  } else {
+		return thingClicked
+	  }
+	})
+  }
+  function division(event, num1) {
+	$(".calculatorButton").click(function(event) {
+	  var thingClicked = this.innerHTML
+	  if ($(this).hasClass("number")) {
+		var nextNum = parseInt(thingClicked)
+		$("#currentValue").html(nextNum) 
+		var result = num1 / nextNum
+		storeAnswer(result) 
+		return result
+	  } else {
+		return thingClicked
+	  }
+	})
+  }
+  function division(event, num1) {
+	$(".calculatorButton").click(function(event) {
+	  var thingClicked = this.innerHTML
+	  if ($(this).hasClass("number")) {
+		var nextNum = parseInt(thingClicked)
+		$("#currentValue").html(nextNum) 
+		var result = num1 / nextNum
+		storeAnswer(result) 
+		return result
+	  } else {
+		return thingClicked
+	  }
+	})
+  }
 
 function clickButton(event) {
   $(".calculatorButton").click(function(event) {
@@ -111,6 +167,15 @@ function clickButton(event) {
 	if ($(this).hasClass("divide")) {
 		var num1 = getCurrentValue()
 		division(event, num1)
+	}
+
+	if ($(this).hasClass("power")) {
+		var num1 = getCurrentValue()
+		power(event, num1)
+	}
+
+	if ($(this).hasClass("squareRoot")) {
+		squareRoot(event)
 	}
 
 	if ($(this).hasClass("number")) {
