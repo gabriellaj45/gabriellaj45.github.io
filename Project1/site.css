@@ -1,108 +1,51 @@
-html, body {
-    margin:0;
-    padding:0;
-    height:100%; 
-} 
-button { 
-    width: 100px; 
-    height: 100px; 
-    color: black; 
-    margin: 5px; 
-    background: lightgray;  
- }
-
-* {
-    font-size: 20px;
-    font-family: "Arial", Arial, sans-serif;
+body {
+    font-size: 64px;
+    background-color: black;
 }
-.tabButton {
-    width: 25%;
-    height: 25%;
-}
-::-webkit-input-placeholder {
-    font-size: 18px;
-}
-
-.headingText {
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-    padding-bottom: 20px;
-
-}
-
-.calculatorButton:hover {
-    color: mediumaquamarine;   
-}
-.tabButton:hover {
-    color: blue;   
-    background: white;
-}
-.dialerControlButton {  
-    width: 157px;
-    height: 100px;
-}
-.dialerControlButton:hover {
-    color: greenyellow;   
-}
-.dialerButton {
-    font-size: 20;
-}
-.tabBar {
-    background: white;
-    padding: 5px;
-    text-align: center;
-}
-.textField {
-    border-radius: 5px;
-}
-.tabButton {
-    width: 200px;
-    height: 25px; 
-    border-radius: 20px;
-}
-
-.buttonLine {
-    display: inline-block;
-}
-.contactListButton {
-    width: 150px;
-    height: 50px;
-    font-size: 16px;
-    background: transparent;
-    border: none;
-
-}
-
-.addContactbutton {
-    width: 150px;
-    height: 50px;
-    display: inline-block;
-}
-
 .container {
-    width: 250px;;
-    clear: both;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px;
+  grid-template-areas: 
+  "header header header header" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main";
 }
-  
-.container input {
-    width: 100%;
-    clear: both;
+.item-header {
+  grid-area: header;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: black;
+  color: white;
+  text-align: right;
 }
-.images {
-    width: 128; 
-    height: 128;
+.calculatorButton {
+  background-color: dimgray;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 50%;
 }
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 50%;
-    
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-  }
+.silver {
+  background-color: silver;
+  color: black;
+}
+.orange {
+  background-color: orange;
+}
+button {
+  font-size: 20px;
+  text-align: center;
+}
 
+.clear {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}

@@ -1,45 +1,39 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Project One</title>
-        <link rel="stylesheet" href="site.css">
+        <title>Project One: UI Programming</title>
+        <link rel="stylesheet" href="site1.css">
     </head>
     <body>
         <div class="headingText" id="headingText" role="banner">Calculator</div>
-        <form>
-            <label for="numberInput" title="Text box for numbers to appear"></label>
-            <input class="textField" id="numberInput" size="32px" placeholder="0"/>
-        </form>  
-        <div id="dialer_pad" role="main" height="100%">
-            <div width="100%">
-                <button class="calculatorButton" id="calBack" accesskey="b">Back</button>
-                <button class="calculatorButton" id="calClear" accesskey="c" width="66%">Clear</button>
-                <button class="calculatorButton" id="calDivide" accesskey="d">&divide</button>
-            </div>
-            <div width="100%">
-                <button class="calculatorButton" id="cal7" accesskey="7">7</button>
-                <button class="calculatorButton" id="cal8" accesskey="8">8</button>
-                <button class="calculatorButton" id="cal9" accesskey="9">9</button>
-                <button class="calculatorButton" id="calMultiply" accesskey="m">&times</button>
-            </div>
-            <div width="100%">
-                <button class="calculatorButton" id="cal4" accesskey="4">4</button>
-                <button class="calculatorButton" id="cal5" accesskey="5">5</button>
-                <button class="calculatorButton" id="cal6" accesskey="6">6</button>
-                <button class="calculatorButton" id="calSubtract" accesskey="s">-</button>
-            </div>
-            <div width="100%">
-                <button class="calculatorButton" id="cal1" accesskey="1">1</button>
-                <button class="calculatorButton" id="cal2" accesskey="2">2</button>
-                <button class="calculatorButton" id="cal3" accesskey="3">3</button>
-                <button class="calculatorButton" id="calAdd" accesskey="a">+</button>
-            </div>
-            <div width="100%">
-                <button class="calculatorButton" id="calVoice" accesskey="v">Microphone</button>
-                <button class="calculatorButton" id="cal0" accesskey="0">0</button>
-                <button class="calculatorButton" id="calDecimal" accesskey="t">.</button>
-                <button class="calculatorButton" id="calEqual" accesskey="e">=</button>
-            </div>
+        <div class="container" id="dialer_pad" role="main" height="100%">
+            
+            <div class="item item-header" id="currentValue">0</div>
+            
+            <button class="calculatorButton silver clear" id="calClear" accesskey="c">Clear</button>
+            <button class="calculatorButton silver" id="calBack" accesskey="b">Back</button>
+            <button class="calculatorButton orange divide" id="calDivide" accesskey="d">&divide</button>
+           
+            <button class="calculatorButton number" id="cal7" accesskey="7">7</button>
+            <button class="calculatorButton number" id="cal8" accesskey="8">8</button>
+            <button class="calculatorButton number" id="cal9" accesskey="9">9</button>
+            <button class="calculatorButton orange multiply" id="calMultiply" accesskey="m">&times</button>
+        
+            <button class="calculatorButton number" id="cal4" accesskey="4">4</button>
+            <button class="calculatorButton number" id="cal5" accesskey="5">5</button>
+            <button class="calculatorButton number" id="cal6" accesskey="6">6</button>
+            <button class="calculatorButton orange subtract" id="calSubtract" accesskey="s">-</button>
+        
+            <button class="calculatorButton number" id="cal1" accesskey="1">1</button>
+            <button class="calculatorButton number" id="cal2" accesskey="2">2</button>
+            <button class="calculatorButton number" id="cal3" accesskey="3">3</button>
+            <button class="calculatorButton orange add" id="calAdd" accesskey="a">+</button>
+        
+            <button class="calculatorButton" id="calVoice" accesskey="v">MIC</button>
+            <button class="calculatorButton number" id="cal0" accesskey="0">0</button>
+            <button class="calculatorButton" id="calDecimal" accesskey="t">.</button>
+            <button class="calculatorButton orange equals" id="calEquals" accesskey="e">=</button>
+           
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="site.js"></script>
