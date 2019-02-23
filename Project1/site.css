@@ -3,6 +3,39 @@
       background-color: black;
     }
 }
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
+
+}
+
+@media only screen and (orientation: portrait) {
+  .extra{
+    display: none;
+  }
+}
+
 body {
     font-size: 64px;
     background-color: black;
@@ -10,15 +43,15 @@ body {
 .container {
   display: grid;
   justify-content: center;
-  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-columns: 80px 80px 80px 80px 80px;
   grid-template-rows: 80px 80px;
   grid-template-areas: 
-  "header header header header" 
-  "main main main main" 
-  "main main main main" 
-  "main main main main" 
-  "main main main main" 
-  "main main main main";
+  "header header header header header" 
+  "main main main main main" 
+  "main main main main main" 
+  "main main main main main" 
+  "main main main main main" 
+  "main main main main main";
 }
 .item-header {
   grid-area: header;
@@ -42,7 +75,7 @@ body {
   color: black;
 }
 .orange {
-  background-color: orange;
+  background-color: coral;
 }
 button {
   font-size: 20px;
