@@ -1,4 +1,8 @@
-/* make all buttons 20 by 20 pixels with white text and green background and a 10 pixel margin */
+html, body {
+    margin:0;
+    padding:0;
+    height:100%; 
+} 
 button { 
     width: 100px; 
     height: 100px; 
@@ -27,7 +31,7 @@ button {
 
 }
 
-.dialerButton:hover {
+.calculatorButton:hover {
     color: mediumaquamarine;   
 }
 .tabButton:hover {

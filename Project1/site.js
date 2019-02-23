@@ -5,6 +5,6 @@ $("#dialer_pad button").click(function() {
 	$("#numberInput").val($("#numberInput").val() + this.innerText);
 })
 
-$("#buttonDialerClear").click(function() {
+$("#calClear").click(function() {
 	$("#numberInput").val("");
 })
