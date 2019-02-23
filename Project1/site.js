@@ -14,7 +14,7 @@ return currentValue
 
 function clearCurrentValue(event) {
 $("#calClear").click(function(event) {
-	$("#currentValue").html(0)
+	$("#currentValue").html("0")
 	getCurrentValue()
 })
 }
@@ -154,6 +154,14 @@ function clickButton(event) {
 $(".calculatorButton").click(function(event) {
 	var thingClicked = this.innerHTML
 
+	if ($(this).hasClass("number")) {
+		var currentValue = getCurrentValue()
+		currentValue = currentValue.toString()
+		var newString = currentValue + thingClicked 
+		var newNumber = parseInt(newString, 10) 
+		$("#currentValue").html(newNumber)
+	}
+
 	if ($(this).hasClass("add")) {
 		var num1 = getCurrentValue()
 		addition(event, num1)
@@ -198,13 +206,7 @@ $(".calculatorButton").click(function(event) {
 		storeAnswer(result) 
 	}
 
-	if ($(this).hasClass("number")) {
-		var currentValue = getCurrentValue()
-		currentValue = currentValue.toString()
-		var newString = currentValue + thingClicked 
-		var newNumber = parseInt(newString, 10) 
-		$("#currentValue").html(newNumber)
-	}
+	
 })
 return thingClicked
 }
