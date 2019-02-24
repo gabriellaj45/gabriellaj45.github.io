@@ -8,7 +8,7 @@
     <h5 id="orientation">Orientation Change</h5>
     <body> 
         <div class="headingText" id="headingText" role="banner">Calculator</div>
-        <div class="container grid" id="dialer_pad" role="main">
+        <div class="container grid" id="calculatorPad" role="main">
             
             <div class="item item-header" id="currentValue">0</div>
 
@@ -48,6 +48,8 @@
                 $( window ).on( "orientationchange", function( event ) {
                     if (window.orientation == 90 || window.orientation == -90) {
                         $( "#orientation" ).text( "This device is in landscape mode!" );
+                        $( this ).css( "grid-template-columns", "repeat(5, 80px)" );
+                        //document.getElementsByClassName('container')[0].style.gridTemplateColumns = e + 'px auto';   
                     }
                     if (window.orientation == 0 || window.orientation == 180) {
                         var x = document.getElementsByClassName("extra");
