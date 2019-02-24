@@ -13,8 +13,15 @@ function getText() {
     return false;
     
 }
+function replaceTimesAndDivides(string) {
+    string = string.replace("x", "*")
+    string = string.replace("÷", "/")
+    return string
+  }
 
 function findOperator(operator){
+
+    operator = replaceTimesAndDivides(operator)
     
     if(operator == '+') {
         return 1
