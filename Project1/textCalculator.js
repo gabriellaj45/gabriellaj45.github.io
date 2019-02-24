@@ -13,16 +13,9 @@ function getText() {
     return false;
     
 }
-function replaceTimesAndDivides(string) {
-    string = string.replace("x", "*")
-    string = string.replace("÷", "/")
-    return string
-  }
 
 function findOperator(operator){
-    
-    operator = replaceTimesAndDivides(operator);
-    $("#currentValue").html(operator);
+  
     if(operator == '+') {
         return 1
     }
@@ -32,7 +25,13 @@ function findOperator(operator){
     if(operator == '*') {
         return 3
     }
+    if(operator == 'x'){
+        return 3
+    }
     if(operator == '/') {
+        return 4
+    }
+    if(operator == '÷') {
         return 4
     }
 }
