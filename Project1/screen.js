@@ -9,14 +9,22 @@ function handleOrientation(event) {
 
 window.addEventListener('deviceorientation', handleOrientation);
 */
+/*
 window.addEventListener('orientationchange', changeOrientation, false);
 
 function changeOrientation() {
 if (orientation == 0 || orientation == 180) {
     document.getElementById('extra').style.display='none'
-    alert("You are now in portrait");
+    
 }
 else {
     document.getElementById('extra').style.display='grid' 
     alert("You are now in landscape");
 }}
+*/
+$( window ).on( "orientationchange", function( event ) {
+    $( "#orientation" ).text( "This device is in " + event.orientation + " mode!" );
+  });
+   
+  // You can also manually force this event to fire.
+  $( window ).orientationchange();
