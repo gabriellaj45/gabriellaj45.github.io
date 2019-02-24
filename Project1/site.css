@@ -3,11 +3,11 @@
   
 }
 
-@media only screen and (orientation: portrait) {
- .extra{
-   display: none;
- }
-
+@media (min-width: 320px) and (max-width: 480px) {
+  .extra{ 
+    display: none;
+  }
+  
 }
 
 @media only screen and (orientation: landscape) {
