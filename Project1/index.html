@@ -47,7 +47,7 @@
                 $('#body').css('min-height', screen.height);
                 $( window ).on( "orientationchange", function( event ) {
                     if (window.orientation == 90 || window.orientation == -90) {
-                        document.getElementById("calculatorPad").style.gridTemplateColumns = "100px 100px 100px 100px 100px";
+                        document.getElementById("calculatorPad").style.gridTemplateColumns = "5% 5% 5% 5% 5%";
                         document.getElementById("currentValue").style.gridColumnEnd="span 5";
                         
                         var x = document.getElementsByClassName("extra");
@@ -57,7 +57,7 @@
                         } 
                     }
                     if (window.orientation == 0 || window.orientation == 180) {
-                        document.getElementById("calculatorPad").style.gridTemplateColumns = "80px 80px 80px 80px";
+                        document.getElementById("calculatorPad").style.gridTemplateColumns = "8% 8% 8% 8%";
                         document.getElementById("currentValue").style.gridColumnEnd="span 4";
                         var x = document.getElementsByClassName("extra");
                         var i;
