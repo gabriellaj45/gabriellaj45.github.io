@@ -12,7 +12,7 @@
             
             <div class="item item-header" id="currentValue">0</div>
 
-            <button class="calculatorButton silver clear" id="calClear" accesskey="c">C</button>
+            <button class="calculatorButton silver clear" id="calClear" accesskey="c">Clear</button>
             <button class="calculatorButton orange divide" id="calDivide" accesskey="d">&divide</button>
             <button class="calculatorButton orange power extra" id="calPower" accesskey="x">x<sup>y</sup></button>
            
@@ -61,7 +61,7 @@
                     }
                     if (window.orientation == 0 || window.orientation == 180) {
                         $( "#orientation" ).text( "This device is in portrait mode!" );
-                        document.getElementById("calculatorPad").style.gridTemplateColumns = "80px 80px 80px 80px";
+                        //document.getElementById("calculatorPad").style.gridTemplateColumns = "80px 80px 80px 80px";
                         var x = document.getElementsByClassName("extra");
                         var i;
                         for (i = 0; i < x.length; i++) {
