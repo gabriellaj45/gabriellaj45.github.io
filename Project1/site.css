@@ -1,9 +1,9 @@
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: black;
-    }
+@media (min-width: 1281px) {
+  .extra{
+    display: none;
+  }
+  
 }
-
 
 @media only screen and (orientation: portrait) {
   .extra{
@@ -11,18 +11,8 @@
   }
 
 }
-/* Landscape */
-@media screen 
-  and (min-width: 360px) 
-  and (min-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) 
-  and (orientation: landscape) {
-    body{
-      background-color: aliceblue;
-    }
 
-}
-@media only screen and (min-width: 350px) {
+@media only screen and (orientation: landscape) {
   .container {
     display: grid;
     justify-content: center;
@@ -35,12 +25,6 @@
       "main main main main main" 
       "main main main main main" 
       "main main main main main";
-  }
-  body{
-    background-color: aliceblue;
-  }
-  .extra{
-    display: none;
   }
 }
 
