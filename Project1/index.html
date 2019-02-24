@@ -44,6 +44,18 @@
         <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
         <script src="site.js"></script>
-        <script src="screen.js"></script>
+        <script>
+                $( window ).on( "orientationchange", function( event ) {
+            if (window.orientation == 90 || window.orientation == -90) {
+                $( "#orientation" ).text( "This device is in landscape mode!" );
+            }
+            if (window.orientation == 0 || window.orientation == 180) {
+                $( "#orientation" ).text( "This device is in portrait mode!" );
+                document.getElementById('extra').style.display='none'
+            }
+            });
+        
+            $( window ).orientationchange();
+        </script>
     </body>
 </html>
