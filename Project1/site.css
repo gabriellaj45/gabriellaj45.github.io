@@ -67,6 +67,6 @@ button {
     grid-column-start: 2;
     grid-column-end: span 2;
 }
-#orientation {
+.h1 {
   color:black;
 }
