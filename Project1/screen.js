@@ -1,4 +1,4 @@
-
+/*
 function handleOrientation(event) {
 
     let htmlStyles = window.getComputedStyle(document.querySelector("html"));
@@ -8,3 +8,13 @@ function handleOrientation(event) {
 }
 
 window.addEventListener('deviceorientation', handleOrientation);
+*/
+window.addEventListener('orientationchange', changeOrientation, false);
+
+function changeOrientation() {
+if (orientation == 0 || orientation == 180) {
+    $("#currentValue").html(34) 
+}
+else {
+    $("#currentValue").html(45) 
+}}
