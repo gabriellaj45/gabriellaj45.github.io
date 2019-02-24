@@ -25,9 +25,6 @@ function findOperator(operator){
     if(operator == '*') {
         return 3
     }
-    if(operator == 0xd7){
-        return 3
-    }
     if(operator == '/') {
         return 4
     }
@@ -43,12 +40,14 @@ function findOperator(operator){
     if(operator == 'ln') {
         return 7
     }
-    
     if(operator == 'e') {
         return 8
     }
     if(operator == 'pow2') {
         return 9
+    }
+    else {
+        return 3
     }
 
 }
@@ -105,4 +104,14 @@ function calculate(op, first, second) {
         return answer
     }
 
+}
+
+document.onkeypress = keyPress;
+
+function keyPress(e){
+  var x = e || window.event;
+  var key = (x.keyCode || x.which);
+  if(key == 13 || key == 3){
+   document.textCalculator.submit();
+  }
 }
