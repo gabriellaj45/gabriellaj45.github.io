@@ -20,9 +20,9 @@ function replaceTimesAndDivides(string) {
   }
 
 function findOperator(operator){
-
-    operator = replaceTimesAndDivides(operator)
     
+    operator = replaceTimesAndDivides(operator);
+    alert(operator);
     if(operator == '+') {
         return 1
     }
