@@ -6,9 +6,7 @@
 }
 
 @media only screen and (orientation: portrait) {
-  .extra{
-    display: none;
-  }
+ 
   *{
     background-color: aquamarine;
   }
