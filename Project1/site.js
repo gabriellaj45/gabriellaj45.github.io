@@ -60,7 +60,7 @@ function subtraction(event, num1) {
 }
 
 function multiplication(event, num1) {
-	
+	$(".calculatorButton").click(function(event) {
 	var thingClicked = this.innerHTML
 	if ($(this).hasClass("number")) {
 		var nextNum = parseInt(thingClicked)
