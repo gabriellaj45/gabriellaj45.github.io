@@ -9,9 +9,7 @@
   .extra{
     display: none;
   }
-  .container{
-    display: flex;
-  }
+
 }
 
 @media only screen and (orientation: landscape) {
@@ -21,7 +19,9 @@
     grid-template-columns: 80px 80px 80px 80px 80px;
     grid-template-rows: 80px 80px;
   }
-  background-color: white;
+  body{
+    background-color: aliceblue;
+  }
 }
 
 body {
