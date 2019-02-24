@@ -52,7 +52,7 @@ button {
     grid-column-end: span 3;
 }
 
-.headingText {
+.headingText, #orientation {
     color: white;
 }
 
