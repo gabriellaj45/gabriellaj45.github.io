@@ -49,7 +49,8 @@
                     if (window.orientation == 90 || window.orientation == -90) {
                         $( "#orientation" ).text( "This device is in landscape mode!" );
                         document.getElementById("calculatorPad").style.gridTemplateColumns = "80px 80px 80px 80px 80px";
-                        document.getElementById("calculatorPad").style.gridTemplateAreas="header header header header header" ;
+                        document.getElementById("calculatorPad").style.gridTemplateAreas="header header header header header";
+                        document.getElementById("currentValue").style.gridColumnEnd="span 5";
                         
                         var x = document.getElementsByClassName("extra");
                         var i;

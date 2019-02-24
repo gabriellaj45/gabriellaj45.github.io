@@ -19,7 +19,7 @@ body {
 .item-header {
   grid-area: header;
   grid-column-start: 1;
-  grid-column-end: span 5;
+  grid-column-end: span 4;
   background-color: black;
   color: white;
   text-align: right;
