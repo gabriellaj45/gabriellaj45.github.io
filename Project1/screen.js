@@ -1,35 +1,38 @@
-/*
-function handleOrientation(event) {
-
-    let htmlStyles = window.getComputedStyle(document.querySelector("html"));
-    let rowNum = parseInt(htmlStyles.getPropertyValue("--rowNum"));
-    
-    document.documentElement.style.setProperty("--rowNum", 6);
-}
-
-window.addEventListener('deviceorientation', handleOrientation);
-*/
-/*
-window.addEventListener('orientationchange', changeOrientation, false);
-
-function changeOrientation() {
-if (orientation == 0 || orientation == 180) {
-    document.getElementById('extra').style.display='none'
-    
-}
-else {
-    document.getElementById('extra').style.display='grid' 
-    alert("You are now in landscape");
-}}
-*/
 $( window ).on( "orientationchange", function( event ) {
     if (window.orientation == 90 || window.orientation == -90) {
-        $( "#orientation" ).text( "This device is in landscape mode!" );
+        document.getElementById("calculatorPad").style.gridTemplateColumns = "18% 18% 18% 18% 18%";
+        document.getElementById("currentValue").style.gridColumnEnd="span 5";
+        document.getElementById("currentValue").style.fontSize="32px";
+
+        var x = document.getElementsByClassName("calculatorButton");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.padding = '5px';
+            x[i].style.fontSize = '15px';
+        } 
+        
+        var x = document.getElementsByClassName("extra");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = 'grid';
+        } 
     }
     if (window.orientation == 0 || window.orientation == 180) {
-        $( "#orientation" ).text( "This device is in portrait mode!" );
-        document.getElementById('extra').style.display='none';
+        document.getElementById("calculatorPad").style.gridTemplateColumns = "22% 22% 22% 22%";
+        document.getElementById("currentValue").style.gridColumnEnd="span 4";
+        var x = document.getElementsByClassName("extra");
+        document.getElementById("currentValue").style.fontSize="64px";
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = 'none';
+        }
+        var x = document.getElementsByClassName("calculatorButton");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.padding = '7.5%';
+            x[i].style.fontSize = '25px';
+        } 
+        
     }
-    });
- 
+});
 $( window ).orientationchange();
