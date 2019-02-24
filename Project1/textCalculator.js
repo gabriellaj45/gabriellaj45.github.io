@@ -6,7 +6,7 @@ function getText() {
     var operator = equationPieces[0];
     var firstNum = equationPieces[1];
     var secondNum = equationPieces[2];
-    
+    alert(operator);
     operation = findOperator(operator);
     answer = calculate(operation, firstNum, secondNum);
     $("#currentValue").html(answer);
@@ -22,7 +22,7 @@ function replaceTimesAndDivides(string) {
 function findOperator(operator){
     
     operator = replaceTimesAndDivides(operator);
-    alert(operator);
+    
     if(operator == '+') {
         return 1
     }
