@@ -28,7 +28,7 @@ $( window ).on( "orientationchange", function( event ) {
     }
     if (window.orientation == 0 || window.orientation == 180) {
         $( "#orientation" ).text( "This device is in portrait mode!" );
-        document.getElementById('extra').style.display='none'
+        document.getElementById('extra').style.display='none';
     }
     });
  
