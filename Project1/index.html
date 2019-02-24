@@ -11,7 +11,7 @@
             
             <div class="item item-header" id="currentValue">0</div>
 
-            <button class="calculatorButton silver clear" id="calClear" accesskey="c">C</button>
+            <button class="calculatorButton silver clear" id="calClear" accesskey="c">Clear</button>
             <button class="calculatorButton orange divide" id="calDivide" accesskey="d">&divide</button>
             <button class="calculatorButton orange power extra" id="calPower" accesskey="x">x<sup>y</sup></button>
            
@@ -47,7 +47,7 @@
                 $('#body').css('min-height', screen.height);
                 $( window ).on( "orientationchange", function( event ) {
                     if (window.orientation == 90 || window.orientation == -90) {
-                        document.getElementById("calculatorPad").style.gridTemplateColumns = "20% 20% 20% 20% 20%";
+                        document.getElementById("calculatorPad").style.gridTemplateColumns = "18% 18% 18% 18% 18%";
                         document.getElementById("currentValue").style.gridColumnEnd="span 5";
                         
                         var x = document.getElementsByClassName("extra");
