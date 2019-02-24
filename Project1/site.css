@@ -15,7 +15,7 @@ html{
   justify-content: center;
   /*grid-template-columns: 80px 80px 80px 80px;*/
   grid-template-columns: 8% 8% 8% 8% 8%;
-  grid-template-rows: 80px 80px;
+  grid-template-rows: 25% 25%;
   grid-template-areas: 
   "header header header header header" 
   "main main main main main" 
