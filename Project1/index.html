@@ -48,7 +48,8 @@
                 $( window ).on( "orientationchange", function( event ) {
                     if (window.orientation == 90 || window.orientation == -90) {
                         $( "#orientation" ).text( "This device is in landscape mode!" );
-                        $( this ).css( "grid-template-columns", "repeat(5, 80px)" );
+                        document.getElementsByClassName('container').style.gridTemplateColumns = "repeat(5, 80px)";
+                        //$( this ).css( "grid-template-columns", "repeat(5, 80px)" );
                         var x = document.getElementsByClassName("extra");
                         var i;
                         for (i = 0; i < x.length; i++) {
