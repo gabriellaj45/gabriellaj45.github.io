@@ -12,7 +12,7 @@
 
 }
 
-@media only screen and(min-width: 500px ) {
+@media only screen and(min-width: 720px ) {
   .container {
     display: grid;
     justify-content: center;
@@ -28,6 +28,9 @@
   }
   body{
     background-color: aliceblue;
+  }
+  .extra{
+    display: none;
   }
 }
 
