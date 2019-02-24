@@ -10,7 +10,6 @@ function getText() {
     operation = findOperator(operator);
     answer = calculate(operation, firstNum, secondNum);
     $("#currentValue").html(answer);
-    return false;
     
 }
 
@@ -112,6 +111,6 @@ function keyPress(e){
   var x = e || window.event;
   var key = (x.keyCode || x.which);
   if(key == 13 || key == 3){
-   document.textCalculator.submit();
+      document.textCalculator.button();
   }
 }
