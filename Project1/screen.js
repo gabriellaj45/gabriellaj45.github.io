@@ -13,8 +13,8 @@ window.addEventListener('orientationchange', changeOrientation, false);
 
 function changeOrientation() {
 if (orientation == 0 || orientation == 180) {
-    $("#currentValue").html(34) 
+    document.getElementById('extra').style.display='none'
 }
 else {
-    $("#currentValue").html(45) 
+    $("#currentValue").html('45') 
 }}

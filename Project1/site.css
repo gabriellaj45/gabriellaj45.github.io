@@ -7,9 +7,7 @@
 @media only screen and (orientation: landscape) {
   
 }
-.extra {
-  display: none;
-}
+
 body {
     font-size: 64px;
     background-color: black;
