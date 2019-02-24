@@ -23,9 +23,7 @@ body {
 .container {
   display: grid;
   justify-content: center;
-  grid-template-rows: repeat(var(--rowNum), var(--gridHeight));
-  grid-template-columns: repeat(var(--colNum), auto);
-  /**
+  
   grid-template-columns: 80px 80px 80px 80px 80px;
   grid-template-rows: 80px 80px;
   grid-template-areas: 
@@ -35,7 +33,7 @@ body {
   "main main main main main" 
   "main main main main main" 
   "main main main main main";
-  **/
+  
 }
 .item-header {
   grid-area: header;
