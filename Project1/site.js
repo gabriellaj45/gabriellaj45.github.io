@@ -31,6 +31,18 @@ $("#calEquals").click(function(event) {
 equals(event)
 function addition(event, num1) {
 $(".calculatorButton").click(function(event) {
+	/*
+	if ($(this).hasClass("number")) {
+		var currentValue = getCurrentValue()
+		currentValue = currentValue.toString()
+		var newString = currentValue + thingClicked 
+		var newNumber = parseInt(newString, 10) 
+		$("#currentValue").html(newNumber)
+		var result = num1 + nextNum
+		storeAnswer(result) 
+		return result
+	}
+	*/
 	var thingClicked = this.innerHTML
 	if ($(this).hasClass("number")) {
 	var nextNum = parseInt(thingClicked)
@@ -41,6 +53,7 @@ $(".calculatorButton").click(function(event) {
 	} else {
 	return thingClicked
 	}
+	
 })
 }
 
