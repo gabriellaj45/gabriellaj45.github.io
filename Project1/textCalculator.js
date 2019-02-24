@@ -6,7 +6,7 @@ function getText() {
     var operator = equationPieces[0];
     var firstNum = equationPieces[1];
     var secondNum = equationPieces[2];
-    alert(operator);
+    $("#currentValue").html(operator);
     operation = findOperator(operator);
     answer = calculate(operation, firstNum, secondNum);
     $("#currentValue").html(answer);
