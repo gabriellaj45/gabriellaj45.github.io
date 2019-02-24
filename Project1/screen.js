@@ -16,5 +16,5 @@ if (orientation == 0 || orientation == 180) {
     document.getElementById('extra').style.display='none'
 }
 else {
-    $("#currentValue").html('45') 
+    document.getElementById('extra').style.display='grid' 
 }}
