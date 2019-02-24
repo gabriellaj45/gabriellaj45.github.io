@@ -30,6 +30,10 @@ html{
   "main main main main";
   
 }
+sup {
+  font-size:xx-small; 
+  vertical-align:super;
+}
 
 .item-header {
   font-size: 64px;
