@@ -53,7 +53,7 @@ button {
     grid-column-end: span 3;
 }
 
-.headingText, h5 {
+.headingText {
     color: white;
 }
 
