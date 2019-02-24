@@ -48,6 +48,11 @@
                     if (window.orientation == 90 || window.orientation == -90) {
                         document.getElementById("calculatorPad").style.gridTemplateColumns = "18% 18% 18% 18% 18%";
                         document.getElementById("currentValue").style.gridColumnEnd="span 5";
+                        var x = document.getElementsByClassName("calculatorButton");
+                        var i;
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.padding = '5px';
+                        } 
                         
                         var x = document.getElementsByClassName("extra");
                         var i;
