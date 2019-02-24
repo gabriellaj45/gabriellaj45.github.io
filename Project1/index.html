@@ -49,16 +49,16 @@
                     if (window.orientation == 90 || window.orientation == -90) {
                         $( "#orientation" ).text( "This device is in landscape mode!" );
                         document.getElementById("calculatorPad").style.gridTemplateColumns = "80px 80px 80px 80px 80px";
-                        //$( this ).css( "grid-template-columns", "repeat(5, 80px)" );
-                        /*
+                        
                         var x = document.getElementsByClassName("extra");
                         var i;
                         for (i = 0; i < x.length; i++) {
                             x[i].style.display = 'grid';
-                        */
+                        
                         //document.getElementsByClassName('container')[0].style.gridTemplateColumns = e + 'px auto';   
                     }
                     if (window.orientation == 0 || window.orientation == 180) {
+                        document.getElementById("calculatorPad").style.gridTemplateColumns = "80px 80px 80px 80px";
                         var x = document.getElementsByClassName("extra");
                         var i;
                         for (i = 0; i < x.length; i++) {
