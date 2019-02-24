@@ -1,8 +1,4 @@
-@media (min-width: 700px) {
-  .grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
+
 
 @media only screen and (orientation: landscape) {
   
