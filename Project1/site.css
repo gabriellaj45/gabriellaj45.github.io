@@ -18,8 +18,8 @@ body {
 }
 .item-header {
   grid-area: header;
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 5;
   background-color: black;
   color: white;
   text-align: right;
