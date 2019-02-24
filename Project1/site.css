@@ -12,12 +12,19 @@
 
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and(min-width: 500px ) {
   .container {
     display: grid;
     justify-content: center;
     grid-template-columns: 80px 80px 80px 80px 80px;
     grid-template-rows: 80px 80px;
+    grid-template-areas: 
+      "header header header header header" 
+      "main main main main main" 
+      "main main main main main" 
+      "main main main main main" 
+      "main main main main main" 
+      "main main main main main";
   }
   body{
     background-color: aliceblue;
@@ -34,7 +41,7 @@ body {
   grid-template-columns: 80px 80px 80px 80px;
   grid-template-rows: 80px 80px;
   grid-template-areas: 
-  "header header header header " 
+  "header header header header" 
   "main main main main" 
   "main main main main" 
   "main main main main" 
