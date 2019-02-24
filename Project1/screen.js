@@ -23,8 +23,12 @@ else {
 }}
 */
 $( window ).on( "orientationchange", function( event ) {
-    $( "#orientation" ).text( "This device is in " + event.orientation + " mode!" );
-  });
-   
-  // You can also manually force this event to fire.
-  $( window ).orientationchange();
+    if (window.orientation == 90 || window.orientation == -90) {
+        $( "#orientation" ).text( "This device is in landscape mode!" );
+    }
+    if (window.orientation == 0 || window.orientation == 180) {
+        $( "#orientation" ).text( "This device is in portrait mode!" );
+    }
+    });
+ 
+$( window ).orientationchange();
