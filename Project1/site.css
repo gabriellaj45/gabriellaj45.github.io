@@ -2,7 +2,7 @@ body {
     font-size: 64px;
     background-color: black;
 }
-/*
+
 .container {
   display: grid;
   justify-content: center;
@@ -17,7 +17,7 @@ body {
   "main main main main";
   
 }
-*/
+
 .item-header {
   grid-area: header;
   grid-column-start: 1;
