@@ -37,18 +37,21 @@
   .container{
     display: flex;
   }
-  .grid {
-    
+}
+
+@media only screen and (orientation: landscape) {
+  .container {
+    display: grid;
     justify-content: center;
-    grid-template-columns: 80px 80px 80px;
+    grid-template-columns: 80px 80px 80px 80px 80px;
     grid-template-rows: 80px 80px;
-    grid-template-areas:
-    "header header header header" 
-    "main main main main" 
-    "main main main main" 
-    "main main main main" 
-    "main main main main" 
-    "main main main main";
+    grid-template-areas: 
+    "header header header header header" 
+    "main main main main main" 
+    "main main main main main" 
+    "main main main main main" 
+    "main main main main main" 
+    "main main main main main";
   }
 }
 
@@ -59,15 +62,15 @@ body {
 .container {
   display: grid;
   justify-content: center;
-  grid-template-columns: 80px 80px 80px 80px 80px;
+  grid-template-columns: 80px 80px 80px 80px;
   grid-template-rows: 80px 80px;
   grid-template-areas: 
-  "header header header header header" 
-  "main main main main main" 
-  "main main main main main" 
-  "main main main main main" 
-  "main main main main main" 
-  "main main main main main";
+  "header header header header " 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main";
 }
 .item-header {
   grid-area: header;
