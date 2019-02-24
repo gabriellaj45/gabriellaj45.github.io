@@ -1,32 +1,16 @@
 @media (min-width: 1281px) {
-  .extra{
-    display: none;
-  }
+  
   
 }
 
 @media only screen and (orientation: portrait) {
  
-  *{
-    background-color: aquamarine;
-  }
+  
 
 }
 
 @media only screen and (orientation: landscape) {
-  .extra {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 80px 80px 80px 80px 80px;
-    grid-template-rows: 80px 80px;
-    grid-template-areas: 
-      "header" 
-      "main" 
-      "main" 
-      "main" 
-      "main" 
-      "main";
-  }
+  
 }
 
 body {
