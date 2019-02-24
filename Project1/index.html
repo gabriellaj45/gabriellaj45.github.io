@@ -54,10 +54,11 @@
                         var i;
                         for (i = 0; i < x.length; i++) {
                             x[i].style.display = 'grid';
-                        
+                        }
                         //document.getElementsByClassName('container')[0].style.gridTemplateColumns = e + 'px auto';   
                     }
                     if (window.orientation == 0 || window.orientation == 180) {
+                        $( "#orientation" ).text( "This device is in portrait mode!" );
                         document.getElementById("calculatorPad").style.gridTemplateColumns = "80px 80px 80px 80px";
                         var x = document.getElementsByClassName("extra");
                         var i;
