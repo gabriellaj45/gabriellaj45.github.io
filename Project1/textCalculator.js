@@ -25,7 +25,7 @@ function findOperator(operator){
     if(operator == '*') {
         return 3
     }
-    if(operator == 'x'){
+    if(operator == 0xd7){
         return 3
     }
     if(operator == '/') {
@@ -34,6 +34,23 @@ function findOperator(operator){
     if(operator == '÷') {
         return 4
     }
+    if(operator == 'sqrt') {
+        return 5
+    }
+    if(operator == 'pow') {
+        return 6
+    }
+    if(operator == 'ln') {
+        return 7
+    }
+    
+    if(operator == 'e') {
+        return 8
+    }
+    if(operator == 'pow2') {
+        return 9
+    }
+
 }
 
 function calculate(op, first, second) {
@@ -61,4 +78,31 @@ function calculate(op, first, second) {
         var answer = firstNum / secondNum;
         return answer
     }
+    if(op == 5){
+        var firstNum = parseInt(first);
+        var answer = Math.sqrt(firstNum);
+        return answer
+    }
+    if(op == 6){
+        var firstNum = parseInt(first);
+        var secondNum = parseInt(second);
+        var answer = Math.pow(firstNum, secondNum)
+        return answer
+    }
+    if(op == 7){
+        var firstNum = parseInt(first);
+        var answer = Math.log(firstNum)
+        return answer
+    }
+    if(op == 8){
+        var firstNum = parseInt(first);
+        var answer = Math.exp(firstNum)
+        return answer
+    }
+    if(op == 9){
+        var firstNum = parseInt(first);
+        var answer = Math.pow(firstNum, 2)
+        return answer
+    }
+
 }
