@@ -12,7 +12,7 @@
             
             <div class="item item-header" id="currentValue">0</div>
 
-            <button class="calculatorButton silver clear" id="calClear" accesskey="c">C</button>
+            <button class="calculatorButton silver clear" id="calClear" accesskey="c">Clear</button>
             <button class="calculatorButton orange divide" id="calDivide" accesskey="d">&divide</button>
             <button class="calculatorButton orange power extra" id="calPower" accesskey="x">x<sup>y</sup></button>
            
@@ -49,6 +49,12 @@
                     if (window.orientation == 90 || window.orientation == -90) {
                         $( "#orientation" ).text( "This device is in landscape mode!" );
                         document.getElementById("calculatorPad").style.gridTemplateColumns = "80px 80px 80px 80px 80px";
+                        document.getElementById("calculatorPad").style.gridTemplateAreas="header header header header header" 
+                                                                                        "main main main main main" 
+                                                                                        "main main main main main" 
+                                                                                        "main main main main main" 
+                                                                                        "main main main main main" 
+                                                                                        "main main main main main";
                         
                         var x = document.getElementsByClassName("extra");
                         var i;
