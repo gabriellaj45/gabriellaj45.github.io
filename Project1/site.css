@@ -1,21 +1,15 @@
-@media (min-width: 1281px) {
-  .extra{ 
-    display: none;
-  }
-  
-}
-
 @media (min-width: 700px) {
   .grid {
     grid-template-columns: repeat(5, 1fr);
   }
-  
 }
 
 @media only screen and (orientation: landscape) {
   
 }
-
+.extra {
+  display: none;
+}
 body {
     font-size: 64px;
     background-color: black;
@@ -24,15 +18,15 @@ body {
   display: grid;
   justify-content: center;
   
-  grid-template-columns: 80px 80px 80px 80px 80px;
+  grid-template-columns: 80px 80px 80px 80px;
   grid-template-rows: 80px 80px;
   grid-template-areas: 
-  "header header header header " 
-  "main main main main " 
-  "main main main main " 
-  "main main main main " 
-  "main main main main " 
-  "main main main main ";
+  "header header header header" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main";
   
 }
 .item-header {
