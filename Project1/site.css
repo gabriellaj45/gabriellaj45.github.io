@@ -6,8 +6,8 @@
 }
 
 @media (min-width: 700px) {
-  .extra{ 
-    display: none;
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
   }
   
 }
@@ -27,12 +27,12 @@ body {
   grid-template-columns: 80px 80px 80px 80px 80px;
   grid-template-rows: 80px 80px;
   grid-template-areas: 
-  "header header header header header" 
-  "main main main main main" 
-  "main main main main main" 
-  "main main main main main" 
-  "main main main main main" 
-  "main main main main main";
+  "header header header header " 
+  "main main main main " 
+  "main main main main " 
+  "main main main main " 
+  "main main main main " 
+  "main main main main ";
   
 }
 .item-header {
