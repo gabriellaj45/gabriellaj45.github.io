@@ -145,6 +145,7 @@ table, th, td {
 
 #paragraph {
   font-size: 18px;
+  width: 100%;
 }
 
 #title {
