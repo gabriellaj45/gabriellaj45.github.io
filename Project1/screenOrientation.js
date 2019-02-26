@@ -2,6 +2,7 @@ $( window ).on( "orientationchange", function( event ) {
     if (window.orientation == 90 || window.orientation == -90) {
         document.getElementById("calculatorPad").style.gridTemplateColumns = "18% 18% 18% 18% 18%";
         document.getElementById("currentValue").style.gridColumnEnd="span 5";
+        document.getElementById("calSpace").style.gridColumnEnd="span 5";
         document.getElementById("currentValue").style.fontSize="32px";
 
         var x = document.getElementsByClassName("calculatorButton");
@@ -20,6 +21,7 @@ $( window ).on( "orientationchange", function( event ) {
     if (window.orientation == 0 || window.orientation == 180) {
         document.getElementById("calculatorPad").style.gridTemplateColumns = "22% 22% 22% 22%";
         document.getElementById("currentValue").style.gridColumnEnd="span 4";
+        document.getElementById("calSpace").style.gridColumnEnd="span 4";
         var x = document.getElementsByClassName("extra");
         document.getElementById("currentValue").style.fontSize="64px";
         var i;

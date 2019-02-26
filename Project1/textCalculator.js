@@ -9,7 +9,7 @@ function getText() {
     
     operation = findOperator(operator);
     answer = calculate(operation, firstNum, secondNum);
-    $("#currentValue").html(answer);
+    document.getElementById('mathEquation').value = answer;
     
 }
 
@@ -111,6 +111,11 @@ function keyPress(e){
   var x = e || window.event;
   var key = (x.keyCode || x.which);
   if(key == 13 || key == 3){
-      document.textCalculator.button();
+    document.getElementById("calEquals").click();
   }
+}
+
+function myFunc(element) {
+    var getCurrentValue = document.getElementById("mathEquation").value;
+    document.getElementById("mathEquation").value = getCurrentValue + element.getAttribute('calcNum');
 }
