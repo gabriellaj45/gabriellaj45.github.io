@@ -23,7 +23,26 @@ html{
   #calSpace{
     grid-column-end: span 5;
   }
+  #calPower{
+    display: grid;
+  }
+  #calRoot{
+    display: grid;
+  }
+  #calNatural{
+    display: grid;
+  }
+  #calExponential{
+    display: grid;
+  }
+  #calSquared{
+    display: grid;
+  }
 
+}
+
+.extra {
+  display: none;
 }
 
 .container {
