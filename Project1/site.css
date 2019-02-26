@@ -17,6 +17,12 @@ html{
   #calculatorPad{
     grid-template-columns: 8% 8% 8% 8% 8%;
   }
+  #mathEquation{
+    grid-column-end: span 5;
+  }
+  #calSpace{
+    grid-column-end: span 5;
+  }
 
 }
 
