@@ -76,6 +76,7 @@ button {
   grid-row: 7;
   grid-column-start: 1;
   grid-column-end: span 5;
+  border-radius: 0px;
 }
 
 .headingText {
