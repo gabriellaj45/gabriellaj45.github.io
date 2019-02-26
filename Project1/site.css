@@ -88,3 +88,12 @@ button {
     grid-column-start: 2;
     grid-column-end: span 2;
 }
+
+#help{
+  padding-left: 92%;
+  text-align: center;
+  color: white;
+} 
+a:visited {
+  color: white;
+}

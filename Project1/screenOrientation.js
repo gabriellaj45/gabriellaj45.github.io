@@ -22,8 +22,9 @@ $( window ).on( "orientationchange", function( event ) {
         document.getElementById("calculatorPad").style.gridTemplateColumns = "22% 22% 22% 22%";
         document.getElementById("currentValue").style.gridColumnEnd="span 4";
         document.getElementById("calSpace").style.gridColumnEnd="span 4";
-        var x = document.getElementsByClassName("extra");
         document.getElementById("currentValue").style.fontSize="64px";
+        
+        var x = document.getElementsByClassName("extra");
         var i;
         for (i = 0; i < x.length; i++) {
             x[i].style.display = 'none';
