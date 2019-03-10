@@ -21,3 +21,13 @@ $("#contactButton").click(function() { // do this when the button is click
     $("#dialerTab").hide(); // hide the element with ID "otherElement"
     $("#listTab").hide();
 });
+
+$('#toggleButton').click(function (){
+    $('link[href="phone.css"]').attr('href','phone-large.css');
+ });
+
+ $('#unToggleButton').click(function (){
+    $('link[href="phone-large.css"]').attr('href','phone.css');
+ });
+ 
+ 

@@ -1,0 +1,55 @@
+/* make all buttons 20 by 20 pixels with white text and green background and a 10 pixel margin */
+button { 
+    width: 25%; 
+    height: 25%; 
+    color: white; 
+    margin: 1%; 
+    background: purple;  
+    font-size: 200%;
+ }
+ 
+* {
+    font-size: 200%;
+    font-family: "Arial", Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+::-webkit-input-placeholder {
+    font-size: 125%;
+}
+
+button:hover {
+    color: greenyellow;    
+}
+
+.tabButton:hover {
+    color: blue;   
+    background: white;
+}
+
+.dialerEndButton {  
+    width: 38.25%;
+    height: 38.25%;
+}
+
+
+.tabBar {
+    padding: 5px;
+    text-align: center;
+}
+
+.textField {
+    border-radius: 5px;
+}
+
+.tabButton {
+    width: 30%;
+    height: 30%; 
+}
+
+.contactListButton, .addContactButton{
+    width: 40%;
+    height: 40%;
+}
+

@@ -4,10 +4,12 @@
         <link rel="stylesheet" href="phone.css">
     </head>
     <body>
-        <div class="tabBar" id="tabBar">
+        <div class="tabBar" id="tabBar" >
             <button class="tabButton" id="dialerButton">Dialer</button>
             <button class="tabButton" id="listButton">Contact List</button>
-            <button class="tabButton" id="contactButton">Add Contact</button>            
+            <button class="tabButton" id="contactButton">Add Contact</button> 
+            <button class="toggle" id="toggleButton">Toggle Contrast/Text</button>   
+            <button class="toggle" id="unToggleButton">unToggle Contrast/Text</button>            
         </div>
         <div class="tabContent" id="tabContent">
             <div class="dialerTab" id="dialerTab">
@@ -15,7 +17,6 @@
                 <form>
                     <input class="textField" id="name" placeholder="" size="45">
                 </form> 
-                <br>
                 <button class="dialerButton" id="dialerButton">1</button>
                 <button class="dialerButton" id="dialerButton">2</button>
                 <button class="dialerButton" id="dialerButton">3</button>
@@ -38,21 +39,21 @@
             </div>
             <div class="listTab" id="listTab">
                 <div class="headingText" id="headingText"> Contact List</div>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Iron Man</button></div>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Captain America</button></div>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Black Widow</button></div>
+                    <button class="contactListButton" id="contactListButton">Iron Man</button>
+                    <button class="contactListButton" id="contactListButton">Captain America</button>
+                    <button class="contactListButton" id="contactListButton">Black Widow</button>
                     <br>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Thor</button></div>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Black Panther</button></div>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Doctor Strange</button></div>
+                    <button class="contactListButton" id="contactListButton">Thor</button>
+                    <button class="contactListButton" id="contactListButton">Black Panther</button>
+                    <button class="contactListButton" id="contactListButton">Doctor Strange</button>
                     <br>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Ant Man</button></div>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Scarlet Witch</button></div>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Vision</button></div>
+                    <button class="contactListButton" id="contactListButton">Ant Man</button>
+                    <button class="contactListButton" id="contactListButton">Scarlet Witch</button>
+                    <button class="contactListButton" id="contactListButton">Vision</button>
                     <br>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Bucky Barnes</button></div>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Groot</button></div>
-                    <div class="buttonLine"><button class="contactListButton" id="contactListButton">Spiderman</button></div>
+                    <button class="contactListButton" id="contactListButton">Bucky Barnes</button>
+                    <button class="contactListButton" id="contactListButton">Groot</button>
+                    <button class="contactListButton" id="contactListButton">Spiderman</button>
             </div>
             <div class="contactTab" id="contactTab">
                 <div class="headingText" id="headingText"> Add Contact </div>
