@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="tabBar" id="tabBar" >
-            <button class="tabButton" id="dialerButton">Dialer</button>
+            <button class="tabButton" id="dialButton">Dialer</button>
             <button class="tabButton" id="listButton">Contact List</button>
             <button class="tabButton" id="contactButton">Add Contact</button> 
             <button class="toggle" id="toggleButton">Toggle Contrast/Text</button>   
@@ -15,27 +15,35 @@
             <div class="dialerTab" id="dialerTab">
                 <div class="headingText" id="headingText"> Dialer</div>
                 <form>
-                    <input class="textField" id="name" placeholder="" size="45">
-                </form> 
-                <button class="dialerButton" id="dialerButton">1</button>
-                <button class="dialerButton" id="dialerButton">2</button>
-                <button class="dialerButton" id="dialerButton">3</button>
-                <br>
-                <button class="dialerButton" id="dialerButton">4</button>
-                <button class="dialerButton" id="dialerButton">5</button>
-                <button class="dialerButton" id="dialerButton">6</button>
-                <br>
-                <button class="dialerButton" id="dialerButton">7</button>
-                <button class="dialerButton" id="dialerButton">8</button>
-                <button class="dialerButton" id="dialerButton">9</button>
-                <br>
-                <button class="dialerButton" id="dialerButton">*</button>
-                <button class="dialerButton" id="dialerButton">0</button>
-                <button class="dialerButton" id="dialerButton">#</button>
-                <br>
-                <button class="dialerEndButton" id="dialerButton">Dial</button>
-                <button class="dialerEndButton" id="dialerButton">Clear</button>
-
+                    <label for="numberInput" title="Text box for numbers to appear"></label>
+                    <input class="textField" id="numberInput" size="32px"/>
+                </form>  
+                <div id="dialer_pad" role="main">
+                    <div>
+                        <button class="dialerButton" id="dialer1" accesskey="1">1</button>
+                        <button class="dialerButton" id="dialer2" accesskey="2">2</button>
+                        <button class="dialerButton" id="dialer3" accesskey="3">3</button>
+                    </div>
+                    <div>
+                        <button class="dialerButton" id="dialer4" accesskey="4">4</button>
+                        <button class="dialerButton" id="dialer5" accesskey="5">5</button>
+                        <button class="dialerButton" id="dialer6" accesskey="6">6</button>
+                    </div>
+                    <div>
+                        <button class="dialerButton" id="dialer7" accesskey="7">7</button>
+                        <button class="dialerButton" id="dialer8" accesskey="8">8</button>
+                        <button class="dialerButton" id="dialer9" accesskey="9">9</button>
+                    </div>
+                    <div>
+                        <button class="dialerButton" id="dialerStar" accesskey="x">*</button>
+                        <button class="dialerButton" id="dialer0" accesskey="0">0</button>
+                        <button class="dialerButton" id="dialerPound" accesskey="p">#</button>
+                    </div>
+                </div>
+                <div id="dialerControls">
+                    <button class="dialerControlButton" id="buttonDial" accesskey="l">Dial</button>
+                    <button class="dialerControlButton" id="buttonDialerClear" accesskey="r">Clear</button>
+                </div>
             </div>
             <div class="listTab" id="listTab">
                 <div class="headingText" id="headingText"> Contact List</div>
@@ -54,6 +62,7 @@
                     <button class="contactListButton" id="contactListButton">Bucky Barnes</button>
                     <button class="contactListButton" id="contactListButton">Groot</button>
                     <button class="contactListButton" id="contactListButton">Spiderman</button>
+                </div>
             </div>
             <div class="contactTab" id="contactTab">
                 <div class="headingText" id="headingText"> Add Contact </div>

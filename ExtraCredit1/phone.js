@@ -4,7 +4,7 @@ $(document).ready(function() { // do this when the document is loaded
     $("#contactTab").hide();
 });
 
-$("#dialerButton").click(function() { // do this when the button is click
+$("#dialButton").click(function() { // do this when the button is click
 	$("#dialerTab").show(); // show the element with ID "element"
     $("#listTab").hide(); // hide the element with ID "otherElement"
     $("#contactTab").hide();
@@ -29,5 +29,12 @@ $('#toggleButton').click(function (){
  $('#unToggleButton').click(function (){
     $('link[href="phone-large.css"]').attr('href','phone.css');
  });
- 
+
+ $("#dialer_pad button").click(function() {
+	$("#numberInput").val($("#numberInput").val() + this.innerText);
+})
+
+$("#buttonDialerClear").click(function() {
+	$("#numberInput").val("");
+})
  
