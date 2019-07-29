@@ -1,0 +1,105 @@
+/* make all buttons 20 by 20 pixels with white text and green background and a 10 pixel margin */
+button { 
+    width: 100px; 
+    height: 100px; 
+    color: black; 
+    margin: 5px; 
+ }
+ p {
+     text-align: center;
+     
+ }
+
+ .bodyText {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+ }
+
+ .projectHeader {
+     font-size: 30px;
+ }
+
+* {
+    font-size: 15px;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+}
+  
+.left{
+    width: 25%;
+}
+.right {
+    width: 75%;
+    height: 100%;
+}
+  
+.right p{
+    padding: 75px 0;
+    text-align: center;
+}
+
+.aboutText {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+    background: lightgrey;
+}
+
+.headingText {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    background: lightgrey;
+}
+
+.tabButton:hover {
+    color: black;   
+    background: aquamarine;
+}
+
+.tabBar {
+    padding: 5px;
+    text-align: center;
+    background: blue;
+}
+
+.tabButton {
+    width: 20%;
+    height: 25px; 
+    border-radius: 20px;
+}
+
+.buttonLine {
+    display: inline-block;
+}
+
+.rotateimg90 {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .rotateimg270 {
+    -webkit-transform:rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+
+  figure {
+    text-align: center;
+  }
