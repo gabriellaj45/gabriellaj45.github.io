@@ -158,7 +158,7 @@ void drawFire(int noiseScale, int offsetFromTop, color theColor, float noiseStep
 void drawGrass() {
   noStroke();
   fill(42, 128, 44);
-  square(0, 585, width);
+  rect(0, 585, width, width);
 }
 
 void drawIsaacNewton(){
@@ -171,7 +171,7 @@ void drawIsaacNewton(){
   line(250, 540, 250, 580);
   line(250, 560, 265, 555);
   line(250, 580, 275, 590);
-  square(265, 545, 20);
+  rect(265, 545, 20, 20);
   popMatrix();
   if (appleY == 550){
     showText = true;
