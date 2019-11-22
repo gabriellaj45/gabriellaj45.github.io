@@ -167,7 +167,7 @@ void drawIsaacNewton(){
   noFill();
   stroke(0);
   translate(-25, 10);
-  circle(250, 525, 30);
+  ellipse(250, 525, 30, 30);
   line(250, 540, 250, 580);
   line(250, 560, 265, 555);
   line(250, 580, 275, 590);
