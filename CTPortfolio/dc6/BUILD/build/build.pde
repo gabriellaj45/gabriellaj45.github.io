@@ -25,12 +25,8 @@ boolean blackOut = false;
 boolean steam = false;
 PImage img, smoke;
 
-void settings() {
-  size(600, 600);
-  
-}
-
 void setup() {
+  size(600, 600);
   img = loadImage("smokeyTheBear.jpg");
   smoke = loadImage("smoky.jpg");
 }
