@@ -3,10 +3,91 @@
   <head>
     <title>Final Project: Jam With Me!</title>
   </head> 
+  <style>
+    #guitar{
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+      }
+    p {
+      text-align: center;
+    }
+  </style>
   <body>
-        <img src="jamTitle.jpg" alt="Jam With Me Title Page" width="500"> <br>
-        <a href="learnChords.html"><button class="tabButton" id="chordsButton">Learn Chords</button></a> 
-        <a href="learnSongs.html"><button class="tabButton" id="songsButton">Learn Songs</button></a> <br>
-        <img src="guitarNeck.jpg" alt="Jam With Me Title Page" height="400"> <br>
+    <h1><u>Jam With Me</u></h1>
+    <img src="jamTitle.jpg" alt="Opening page of the Jam With Me app" width="350">   <img src="guitar.gif" alt="Guitar strings being plucked">  
+    <h2><i>Brainstorming</i></h2>
+    <p>
+      My orginal idea was to have a tactile attachment that will be made out of foam that I will laser cut for the neck of the guitar. 
+      There would be an accompanying application that will provide textual descriptions of each chord shown in the image. 
+      This application will teach the children the correct positions for each chord and provide guidance when they are not in the right position. 
+      This will be done with computer vision that will track the location of their fingers. 
+      A real size guitar would be laser cut to use for future user studies.
+    </p>
+    <img src="brainstorming.png" alt="Braille cell, opening page of Jam With Me, an example of the tactile attachment, and a laser cut guitar" width= "400"> <br>
+    <img src="lasercut.png" alt="Laser cut guitar out of card board" height="350"> 
+    <h2><i>Iterations</i></h2>
+    <h3>Iteration One</h3>
+    <p>
+      <ol>
+        <li>Computer Vision could not be used to track the location of the user's fingers because a 3D camera would be necessary because the location on the 
+          Z axis is important for the calculations. </li>
+          <li>The tactile attachment for the neck of the guitar is scraped because I cannot figure out how to place it on the guitar without interfering
+            with the strings.
+          </li>
+        </ol>
+    </p>
+    <h3>Iteration Two</h3>
+    <p>
+      <ol>
+        <li> All guitar chords will be stored in a directory, an image of the user's finger placement on the fretboard will be taken, this image will be compared to the directory
+          of chords and the best match will be determined to signify the chord they are attempting </li>
+        <li>A full sized guitar will be laser cut and the neck of the guitar will have foam squares to represent the fretboard and the strings to create a grid.</li>
+      </ol>
+    </p>
+    <h3>Critiques Feedback</h3>
+    <p>
+      The feedback I will be implementing from the critiques is to include a voice over when the chord changes during the play along for the song. Watch an example of this in the video below!
+    </p>
+    <h2><i>Final Product</i></h2>
+    <p>
+      According to the 2017 American Community Survey (ACS), there are approximately 568, 202 children with vision difficulty in the U.S. 
+      Jam With Me is an application that provides textual descriptions of guitar chords to blind children in an attempt to teach them chords. 
+      Users have the option to check if their finger placement is correct with the application. Jam with Me also provides the option to learn simple songs
+      that have a max of four chords. Users can play along to the song and will hear a voice over when the chord changes. Watch the video below to see the final 
+      product!
+    </p>
+    <br>
+    <img id="guitar" src="guitar.jpg" alt="Guitar propped up aganist the wall" width= "200">
+    <img id="guitar" src="guitarNeck.jpg" alt="Guitar neck with arUco markers" height="200">
+    <h3>Learn Chords</h3>
+    <p>
+      For learning the chords, users select a chord they wish to learn. Once they select the chord, the textual description of that chord is read aloud. The description
+      provides users with a column and row to place each finger. Once the user believes that they have the correct position, they can select the check chord button. Then a picture
+      is taken of their fingers on the fretboard. The image is transformed to a perspective corrected image where the entire background is removed and the only thing
+      remaining in the image is the fretboard with their fingers in the position for said chord. 
+    </p>
+    <img src="example.jpg" alt="Someone holding the G chord on the guitar" width="200">
+    <img src="gExample.jpg" alt="Perspective corrected image with only fretboard visible" width= "200">
+    <p>
+      This is then compared to a directory of chords to determine which chord they are
+      trying to play. If correct, the system congratulates them. If incorrect, the system informs them that they are incorrect and suggests listening to the description again.
+    </p>
+    <h3>Learn Songs</h3>
+    <p>
+      For learn songs, users can heard which chords they need to know to play that song. The users will also have the option to play an example of what the play
+      along will sound like. After confirming the necessary chords, users can play along to their selected song, which provides a voice over for when the song changes.
+    </p>
+    <iframe src="https://drive.google.com/file/d/1j621a8-uRxKzvcrOOkIHL_sg8gxv_8pz/preview" width="640" height="480"></iframe>
+    <h2><i>Future Work</i></h2>
+    <p>
+        <ol>
+          <li>Improve on the application to increase the accuracy of chord detection</li>
+          <li>Ran user studies with blind children</li>
+          <li>Submit to CHI or ASSETS conference student research competition</li>
+        </ol>
+    </p>
   </body>
 </html>
