@@ -2,11 +2,14 @@
 button { 
     width: 100px; 
     height: 100px; 
-    color: black; 
+    color: white; 
+    background-color: blue;
     margin: 5px; 
  }
+
  p {
      text-align: center;
+     padding: 0px;
  }
 
  .bodyText {
@@ -21,6 +24,7 @@ button {
 * {
     font-size: 15px;
     font-family: "Lucida Console", Monaco, monospace;
+    background-color: mintcream;
 }
 .row:after {
     content: "";
@@ -34,6 +38,7 @@ button {
   
 .left{
     width: 25%;
+    height: 100%;
 }
 .right {
     width: 75%;
@@ -41,7 +46,6 @@ button {
 }
   
 .right p{
-    padding: 75px 0;
     text-align: center;
 }
 
@@ -70,13 +74,12 @@ button {
 .tabBar {
     padding: 5px;
     text-align: center;
-    background: blue;
 }
 
 .tabButton {
-    width: 20%;
-    height: 25px; 
-    border-radius: 20px;
+    width: 23%;
+    height: 5%; 
+    border-radius: 10px;
 }
 
 .buttonLine {
@@ -102,3 +105,17 @@ button {
   figure {
     text-align: center;
   }
+  /* unvisited link */
+  a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: blue;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(250, 87, 11);
+}
