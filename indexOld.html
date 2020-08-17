@@ -1,0 +1,126 @@
+<html lang="en">
+    <head>
+        <title>Gabriella Johnson</title>
+        <link rel="stylesheet" href="gradWeb.css">
+    </head>
+    <body>
+        <header role="banner">
+            <div class="tabBar" id="tabBar">
+                <button class="tabButton" id="homeButton">Home</button>
+                <button class="tabButton" id="aboutButton">About Me</button>
+                <button class="tabButton" id="projectsButton">Projects</button>       
+                <a href="GabriellaJohnsonCV.pdf"><button class="tabButton" id="cvButton">CV</button></a>   
+            </div>
+        </header>
+        <div class="tabContent" id="tabContent">
+            <div class="homeTab" id="homeTab">
+                <br>
+                <main role="main">
+                    <div class="row">
+                        <div class="column left" >
+                            <img src="Headshot.jpg" alt="Gabriella Johnson professional headshot" width="250">
+                            Gabriella Johnson <br>
+                            2nd Year Ph.D. Student <br>
+                            University of Colorado Boulder <br>
+                            Boulder, CO <br>
+                            gabriella.johnson@colorado.edu <br>
+                            <a href="https://github.com/gabriellaj45"><img src="gitHub.png" width="35" height="35" title="GitHub" alt="GitHub Logo"></a>
+                        </div>
+                        <div class="column right">
+                            <p id="homePage">
+                                
+                                Welcome! My name is Gabriella Johnson and I am a PhD student at the University of Colorado Boulder in the Superhuman 
+                                Computing Lab under the advisement of <a href="http://shaunkane.info/">Shaun Kane</a>.
+                                <figure>
+                                    <img src="HawaiiPosterPresentation.jpg" alt="Gabriella standing in front of her poster" width="450">
+                                    <figcaption>Presenting a poster at the CRA URMD Grad Cohort in Waikoloa Village, Hawaii!</figcaption>
+                                </figure>
+                            </p>
+                        </div>
+                    </div>
+                </main>
+                
+            </div>
+            <div class="aboutTab" id="aboutTab">
+                <div class="aboutText" id="headingText">
+                    Gabriella Johnson | Computer Science, HCI | University of Colorado Boulder
+                </div>
+                <main role="main">
+                    <div class="bodyText">
+                        <br>
+                        <p id="centerText">
+                            <img src="GardenofGods.JPG" alt="Gabriella Johnson sitting on rocks at the Garden of the Gods" class="rotateimg270" height="300" width="325">
+                        </p>
+                        <br>
+                        I was born and raised in San Antonio, Texas (proud Texan!). Now living in the beautiful Boulder, CO!
+                        <br> <br>
+                        Graduated from the University of Texas at San Antonio with my Bachelor of Science in Computer Science and a minor in Mathematics. 
+                        Currently, I am a Ph.D. student in the Superhuman Computing Lab at the University
+                        of Colorado Boulder, under the advisment of Shaun Kane, focusing on research in Human Computer Interaction with a specialization in accessibility and assistive technologies. 
+                        The majority of my research focuses on fairness, equality, and independence in the area of accessibility. 
+                        <!--Specficially, I want to dive into how we can empower children to be indepedent and provide them with tools to be successful regardless of circumstances.-->
+                        <br> <br>
+                        My current projects look at making board games accessible and ways we can make these games fun and fair for everyone,
+                        where all players can be indepedent and have full autonomy. Head over to the Projects page to learn more!
+                    </div>
+                </main>
+            </div>
+            <div class="projectsTab" id="projectsTab">
+                <div class="headingText" id="headingText">Projects</div>
+                <h1 class="projectHeader">Game Changer</h1>
+                <main role="main">
+                    <div class="bodyText">
+                        <figure>
+                            <img src="FrontPage.png" alt="Players playing Sorry the board while using Game Changer" height="250" width="350">
+                            <figcaption>A player uses Game Changer’s audio guidance and tactile landmarks to explore the board game SORRY!</figcaption>
+                        </figure>
+                        Many board games present their information visually, such as text on the cards and the location of the game pieces.
+                        This causes accessibility challeneges for people with visual impairments. 
+                        Game Changer is a tool to be utilized by people with visual impairments to receive information about the state of a board game. 
+                        Players are able to get the information on cards read and the location of their game pieces as well as their opponent's.
+                        <p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UdCgm86fkk8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </p>
+                        <a href="GameChangerW4APresentation2020.pdf">W4A Presentation Slides</button></a> 
+                        <a href="W4APaper.pdf">W4A Game Changer Paper</button></a> 
+                        <a href="https://youtu.be/TuVJjIT06mo">W4A Presentation Talk</a>
+                    </div>
+                    <h1 class="projectHeader">LabelGen</h1>
+                    <div class="bodyText">
+                        <figure>
+                            <img src="LabelGen.png" alt="LabelGen Workflow" height="550" width="975">
+                            <figcaption>An example of LabelGen's workflow for a Dominion card</figcaption>
+                        </figure>
+                        People with visual impairments label cards with Braille to make them accessible. However, this process can be ardous. 
+                        LabelGen provides a quicker and more affordable option to do-it-yourself accessibility methods
+                        or purchasing accessibility kits from sites like 64oz Games and MaxiAids. 
+                        LabelGen uses a template of the important regions of the card established through an interdependent relationship between blind and sighted players. 
+                        It uses these templates when it scans the card to extract the information, to translate it into Braille, and print out a Braille label. 
+                        If the card contains too much text, 
+                        then a QR code is printed to be scanned by the mobile application that will relay all the textual information in an audio format. 
+                    </div>
+                    <h1 class="projectHeader">Rainie the Reading Robot: Smart Robot for Storytime</h1>
+                    <div class="bodyText">
+                        <figure>
+                            <img src="AvaUserStudy.JPG" alt="A young child uses Rainie to read a book" height="400" width="500">
+                            <figcaption>Young child using Rainie (pointing to an unknown word) to help read a book</figcaption>
+                        </figure>
+                        Half of children from low income communities start first grade up to two years behind their peers [1]. 1 in 4 children in America
+                        grow up without learning how to read [2]. These statistics motivate this project, Rainie the Reading Robot. Rainie is a aid for children
+                        during storytime, where the teddy bear robot will read aloud any words that the child is unfamiliar with. Over time, we hope that this 
+                        relationship will result in an improvement in the child's reading level. Rainie is a stand-in for parents who do not have the time 
+                        or grasp of the langauge to have a storytime with their children. This teddy bear project will empower children to take control of their
+                        reading development and provide them with the tool to do so.
+                    </div>
+                    <h1 class="projectHeader">References</h1>
+                    <ol>
+                        <li>Brizius, J. A., & Foster S. A. (1993). Generation to Generation: Realizing the Promise of Family Literacy. High/Scope Press.</li>
+                        <li>WriteExpress Corporation. "Literacy Statistics." Begin to Read. Accessed April 16, 2014.</li>
+                    </ol>
+                </main>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="gradWeb.js"></script>
+    </body>
+</html>
